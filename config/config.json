@@ -1,0 +1,13 @@
+{
+    "fastq": {
+        "withdrawn": 0,
+        "analysis group": "low coverage"
+    },
+    "aligned": {
+        "analysis group": "low coverage"
+    }, 
+    "variant": {
+
+    }, 
+    "index": 1
+}
