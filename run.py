@@ -5,14 +5,18 @@ from pathlib import Path
 import shutil
 from src import pipeline
 
-maf = .05
+maf = .1
 geno = .1
-mind = .05
+mind = .1
 fn = filtered_name = 'filtered'
 cur_dir = Path('.')
+data_Path = Path('data/')
 staging_Path = Path('data/staging')
-test_file_dir = Path('data/test')
+test_file_dir = Path('test')
 pipeline_vcf_dir = Path('data/pipeline/vcf')
+
+if not data_Path.isdir():
+    data_path.mkdir()
 
 def clear_staging_area():
     for P in staging_Path.iterdir():
